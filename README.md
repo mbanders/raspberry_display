@@ -19,6 +19,7 @@ Use with Apache Webserver
 Setup:
 ```sh
 sudo apt-get install -y apache2 libapache2-mod-wsgi
+sudo usermod -a -G "www-data" pi
 sudo mv raspberry_display.conf /etc/apache2/sites-available/
 sudo a2ensite raspberry_display
 sudo service apache2 reload
