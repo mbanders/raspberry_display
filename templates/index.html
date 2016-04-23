@@ -1,9 +1,14 @@
 <html>
 <head>
  <link rel="stylesheet" href="{{ url_for('static', filename='default.css') }}"  />
+ <meta http-equiv="refresh" content="4">
  <title>RaspberryPi</title>
 </head>
 <body>
-  {{info.uptime}}
+  <table>
+    <tr><th>Uptime</th><td>{{info.uptime}}</td></tr>
+    <tr><th>Download</th><td>{{info.rx_rate}} Mbps</td></tr>
+    <tr><th>Upload</th><td>{{info.tx_rate}} Mbps</td></tr>
+  </table>
 </body>
 </html>
