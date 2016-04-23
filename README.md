@@ -5,9 +5,10 @@ Quick Use
 ---------
 From `/home/pi`:
 ```sh
+sudo apt-get update
 sudo apt-get install git python-pip
 sudo pip install Flask
-git clone git@github.com:mbanders/raspberry_display.git
+git clone https://github.com/mbanders/raspberry_display.git
 cd raspberry_display
 python mysite.py
 ```
